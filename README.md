@@ -60,3 +60,57 @@ python main.py monitor 0xAddr1 0xAddr2 0xAddr3
 ```
 
 ## Example Output
+╔══════════════════════════════════════════════════════╗
+║         SHELBY ANALYTICS DASHBOARD v1.0.0           ║
+║         Account: 0x7271...d042                       ║
+╚══════════════════════════════════════════════════════╝
+📦 STORAGE OVERVIEW
+Total blobs:      24
+Total size:       128.4 MB
+Encrypted:        20 (83%)
+Public:           4 (17%)
+Expiring (7d):    3 ⚠️
+💰 COST SUMMARY
+Total spent:      12.45 ShelbyUSD
+This month:       3.20 ShelbyUSD
+Avg per blob:     0.52 ShelbyUSD
+⛓️  RECENT ACTIVITY
+2025-03-10  register_blob   report.pdf       0.45 sUSD
+2025-03-09  register_blob   dataset.zip      1.20 sUSD
+2025-03-08  register_blob   backup.tar.gz    0.98 sUSD
+
+## Architecture
+shelby-analytics-dashboard/
+├── main.py              # CLI entry point (Typer)
+├── dashboard/
+│   ├── init.py
+│   ├── fetcher.py       # API calls to Shelby + Aptos
+│   ├── analyzer.py      # Data processing and metrics
+│   ├── renderer.py      # Rich terminal UI rendering
+│   ├── alerts.py        # Expiry and threshold alerts
+│   └── exporter.py      # CSV/JSON export
+├── config/
+│   ├── init.py
+│   └── settings.py      # API endpoints and defaults
+├── requirements.txt
+└── .env.example
+
+## Configuration
+
+Copy `.env.example` to `.env` and configure:
+```env
+SHELBY_API_URL=https://api.shelbynet.shelby.xyz/shelby/v1
+APTOS_API_URL=https://api.testnet.aptoslabs.com/v1
+APTOS_API_KEY=aptoslabs_your_key_here
+```
+
+## Related Projects
+
+- [BlobSafe](https://github.com/0xPevita/blobsafe) — Decentralized encrypted storage dApp
+- [shelby-s3-sync](https://github.com/0xPevita/shelby-s3-sync) — S3 sync tool
+- [aptos-account-scanner](https://github.com/0xPevita/aptos-account-scanner) — Account scanner
+
+## License
+
+MIT
+Commit: docs: add README
