@@ -9,19 +9,19 @@
 
 ## Overview
 
-`shelby-analytics-dashboard` is a Python-based CLI and web dashboard that aggregates real-time metrics from the Shelby Protocol and Aptos blockchain. Track storage usage, blob activity, account balances, transaction history, and storage costs — all in one place.
+`shelby-analytics-dashboard` is a Python-based CLI and web dashboard that aggregates real-time metrics from the Shelby Protocol and Aptos blockchain. Track storage usage, blob activity, account balances, transaction history, and storage costs all in one place.
 
 Built as a companion tool for [BlobSafe](https://github.com/0xPevita/blobsafe).
 
 ## Features
 
-- 📊 **Real-time blob metrics** — total blobs, sizes, expiry dates per account
-- ⛓️ **On-chain transaction history** — filter by Shelby storage events
-- 💰 **Cost analytics** — ShelbyUSD spent per day/week/month
-- 🔔 **Expiry alerts** — warn when blobs are about to expire
-- 📈 **Storage trends** — visualize growth over time
-- 🌐 **Multi-account support** — monitor multiple Aptos addresses at once
-- 📤 **Export reports** — CSV and JSON output for further analysis
+- **Real-time blob metrics** - total blobs, sizes, expiry dates per account
+- **On-chain transaction history** - filter by Shelby storage events
+- **Cost analytics** - ShelbyUSD spent per day/week/month
+- **Expiry alerts** - warn when blobs are about to expire
+- **Storage trends** - visualize growth over time
+- **Multi-account support** - monitor multiple Aptos addresses at once
+- **Export reports** - CSV and JSON output for further analysis
 
 ## Requirements
 
@@ -106,9 +106,9 @@ APTOS_API_KEY=aptoslabs_your_key_here
 
 ## Related Projects
 
-- [BlobSafe](https://github.com/0xPevita/blobsafe) — Decentralized encrypted storage dApp
-- [shelby-s3-sync](https://github.com/0xPevita/shelby-s3-sync) — S3 sync tool
-- [aptos-account-scanner](https://github.com/0xPevita/aptos-account-scanner) — Account scanner
+- [BlobSafe](https://github.com/0xPevita/blobsafe) - Decentralized encrypted storage dApp
+- [shelby-s3-sync](https://github.com/0xPevita/shelby-s3-sync) - S3 sync tool
+- [aptos-account-scanner](https://github.com/0xPevita/aptos-account-scanner) - Account scanner
 
 ## License
 
